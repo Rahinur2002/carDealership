@@ -1,19 +1,26 @@
 # Project Title
 
+Car Dealership Console Application
+
 ## Description of the Project
 
-Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
-
+Car dealership console application is designed for dealerships to filter cars through various different searches, list,
+add and remove vehicles. It reads from a file and overwrites the csv file with new vehicle information.
 ## User Stories
 
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
-
-- As a user, I want to be able to input my data, so that the application can process it accordingly.
-- As a user, I want to receive immediate feedback, so I can understand what to do next.
+- As a user, I want to view all the vehicles so that I can browse through the current inventory.
+- As a user, I want to filter vehicles by min/max so that I can search for the car that fits a budget
+- As a user, I want to by make and/or model so that I can search for vehicles that meets my preference.
+- As a user, I want to filter vehicles by year range so that I can view vehicles that fits what vehicle years I want.
+- As a user, I want to filter vehicles by color so that I can browse the list of vehicles that fits what color I want.
+- As a user, I want to filter vehicles by odometer range so that I can view list of vehicles that fits what I want.
+- As a user, I want to add a vehicle so that I can add new vehicles appears in searches.
+- As a user, I want to remove a vehicle, so that I can by VIN so that I can get rid of the vehicles that are not needed.
 
 ## Setup
 
-Instructions on how to set up and run the project using IntelliJ IDEA.
+After you have opened the folder with the instructions listed on "Running the application in intellij, scroll downed to 
+"Program" class to run the application.
 
 ### Prerequisites
 
@@ -32,37 +39,36 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Technologies Used
 
-- Java: Mention the version you are using.
-- Any additional libraries or frameworks used in the project.
+- Java: JDK 17
+- Maven
 
 ## Demo
 
-Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
 
-![Application Screenshot](path/to/your/screenshot.png)
+![Application Screenshot](Images/ss1.png)
+![](Images/sss2.png)
 
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
 
-- Additional feature to be developed.
-- Improvement of current functionalities.
+- Work on making the applications look more readable from developer perspective 
+- add else statements to capture invalid inputs
 
 ## Resources
 
 List resources such as tutorials, articles, or documentation that helped you during the project.
 
-- [Java Programming Tutorial](https://www.example.com)
-- [Effective Java](https://www.example.com)
+- [Youtube](https://www.youtube.com/)
+- [W3School](https://www.w3schools.com/java/default.asp)
 
 ## Team Members
 
-- **Name 1** - Specific contributions or roles.
-- **Name 2** - Specific contributions or roles.
+- Raymond - project management
+- Rahinur Miah - Developer
 
 ## Thanks
 
 Express gratitude towards those who provided help, guidance, or resources:
 
-- Thank you to [Mentor's Name] for continuous support and guidance.
-- A special thanks to all teammates for their dedication and teamwork.
+- Thank you to Raymond for continuous support and guidance!

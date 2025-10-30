@@ -50,13 +50,10 @@ public class DealershipFileManager {
 
     public static void saveDealership(Dealership dealership){
         if (dealership == null) return;
-
-        try {
-            BufferedWriter w = new BufferedWriter((new FileWriter(FILE_NAME)));
+        try (BufferedWriter w = new BufferedWriter(new FileWriter(FILE_NAME, false))){
             w.write(dealership.getName() + " | " +
                     dealership.getAddress() + " | " + dealership.getPhone());
             w.newLine();
-
             for(Vehicle v: dealership.getInventory()) {
                 w.write(v.getVin() + "|" +
                         v.getYear() + "|" +
@@ -71,7 +68,6 @@ public class DealershipFileManager {
         } catch (IOException e) {
             throw new RuntimeException("Failed to save", e);
         }
-
 
     }
 

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53547db-c2c4-4d0b-991f-b1fa2659cb61" name="Changes" comment="completed the proccessGetByMakeModelRequest method to display vehicles that fits user desire make model">
+    <list default="true" id="a53547db-c2c4-4d0b-991f-b1fa2659cb61" name="Changes" comment="completed the proccessGetByTypeRequest method to display vehicles that matches user desired type and implanted the add vehicle and remove method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dealership.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dealership.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DealershipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DealershipFileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +161,39 @@
       <option name="project" value="LOCAL" />
       <updated>1761794206703</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="completed the proccessGetByGetYearRequest method to display vehicles that fits user year range">
+      <option name="closed" value="true" />
+      <created>1761796029855</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761796029855</updated>
+    </task>
+    <task id="LOCAL-00009" summary="completed the proccessGetByColorRequest method to display vehicles that fits user desired color">
+      <option name="closed" value="true" />
+      <created>1761796294642</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761796294642</updated>
+    </task>
+    <task id="LOCAL-00010" summary="completed the proccessGetByMileageRequest method to display vehicles that matches user minimum and maximum mileage">
+      <option name="closed" value="true" />
+      <created>1761801450629</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761801450629</updated>
+    </task>
+    <task id="LOCAL-00011" summary="completed the proccessGetByTypeRequest method to display vehicles that matches user desired type and implanted the add vehicle and remove method">
+      <option name="closed" value="true" />
+      <created>1761802698128</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761802698128</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,6 +204,10 @@
     <MESSAGE value="Phase 4 Completed" />
     <MESSAGE value="completed the proccessGetByPriceRequest method to display vehicles that fits user price" />
     <MESSAGE value="completed the proccessGetByMakeModelRequest method to display vehicles that fits user desire make model" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the proccessGetByMakeModelRequest method to display vehicles that fits user desire make model" />
+    <MESSAGE value="completed the proccessGetByGetYearRequest method to display vehicles that fits user year range" />
+    <MESSAGE value="completed the proccessGetByColorRequest method to display vehicles that fits user desired color" />
+    <MESSAGE value="completed the proccessGetByMileageRequest method to display vehicles that matches user minimum and maximum mileage" />
+    <MESSAGE value="completed the proccessGetByTypeRequest method to display vehicles that matches user desired type and implanted the add vehicle and remove method" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed the proccessGetByTypeRequest method to display vehicles that matches user desired type and implanted the add vehicle and remove method" />
   </component>
 </project>

@@ -96,8 +96,9 @@ public class Dealership {
         List<Vehicle> matchedVehicles = new ArrayList<>();
 
         for (Vehicle v: inventory) {
-            if(v.getOdometer() >= min && v.getOdometer() <= max);
-            matchedVehicles.add(v);
+            if (v.getOdometer() >= min && v.getOdometer() <= max) {
+                matchedVehicles.add(v);
+            }
         }
         return matchedVehicles;
     }
@@ -123,12 +124,12 @@ public class Dealership {
 
     public Boolean removeVehicle(int vin) {
 
-        for (Vehicle v : inventory) {
-            if (v.getVin() == vin) {
-                inventory.remove(v);
+        for (int i = 0; i < inventory.size(); i++) {
+            if (inventory.get(i).getVin() == vin) {
+                inventory.remove(i);
                 return true;
             }
         }
         return false;
-
+    }
 }

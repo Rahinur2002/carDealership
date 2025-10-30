@@ -178,10 +178,12 @@ public class UserInterface {
             System.out.println("Enter VIN (number) of the vehicle you want to remove");
             int vin = Integer.parseInt(scanner.nextLine().trim());
 
-            dealership.removeVehicle(vin);
+            boolean delete = dealership.removeVehicle(vin);
 
-            DealershipFileManager.saveDealership(dealership);
-            System.out.println("Successfully removed the vehicle with VIN: " + vin);
+            if(delete) {
+                DealershipFileManager.saveDealership(dealership);
+                System.out.println("Successfully removed the vehicle with VIN: " + vin);
+            }
         } catch (NumberFormatException e) {
             throw new RuntimeException("failed to remove the vehicle", e);
         }
