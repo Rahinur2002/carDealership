@@ -16,7 +16,7 @@ public class DealershipFileManager {
             if (line == null) return null;
 
             String[] dealerParts = line.split("\\|");
-            if(dealerParts.length < 3) return null;
+            if (dealerParts.length < 3) return null;
 
             String name = dealerParts[0].trim();
             String address = dealerParts[1].trim();
@@ -46,9 +46,9 @@ public class DealershipFileManager {
             return dealership;
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+            throw new RuntimeException("Unable to load file: " + FILE_NAME, e);
 
+        }
     }
 
     public void saveDealership(Dealership dealership){
