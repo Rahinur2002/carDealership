@@ -7,16 +7,20 @@ import java.io.IOException;
 
 public class DealershipFileManager {
 
+    public static final String FILE_NAME = "dealership.csv";
+
     public static Dealership getDealership() {
         try {
-            BufferedReader reader = new BufferedReader((new FileReader("dealership.csv")));
+            BufferedReader reader = new BufferedReader((new FileReader(FILE_NAME)));
             String line = reader.readLine();
             if (line == null) return null;
 
             String[] dealerParts = line.split("\\|");
-            String name = dealerParts[0];
-            String address = dealerParts[1];
-            String phone = dealerParts[2];
+            if(dealerParts.length < 3) return null;
+
+            String name = dealerParts[0].trim();
+            String address = dealerParts[1].trim();
+            String phone = dealerParts[2].trim();
 
             Dealership dealership = new Dealership(name, address, phone);
 
@@ -26,12 +30,12 @@ public class DealershipFileManager {
 
                 int vin = Integer.parseInt(vehicleParts[0]);
                 int year = Integer.parseInt(vehicleParts[1]);
-                String make = vehicleParts[2];
-                String model = vehicleParts[3];
-                String vehicleType = vehicleParts[4];
-                String color = vehicleParts[5];
-                int odometer = Integer.parseInt(vehicleParts[6]);
-                double price = Double.parseDouble(vehicleParts[7]);
+                String make = vehicleParts[2].trim();
+                String model = vehicleParts[3].trim();
+                String vehicleType = vehicleParts[4].trim();
+                String color = vehicleParts[5].trim();
+                int odometer = Integer.parseInt(vehicleParts[6].trim());
+                double price = Double.parseDouble(vehicleParts[7].trim());
 
                 Vehicle vehicle = new Vehicle(vin, year, make, model, vehicleType, color, odometer, price);
 
@@ -47,7 +51,8 @@ public class DealershipFileManager {
 
     }
 
-    public void saveDealerShip(Dealership dealership){
+    public void saveDealership(Dealership dealership){
 
     }
+
 }
