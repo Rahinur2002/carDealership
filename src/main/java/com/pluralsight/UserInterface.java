@@ -65,10 +65,10 @@ public class UserInterface {
 
     public void processGetByPriceRequest() {
         System.out.println("Enter the minimum price: ");
-        double min = Double.parseDouble(scanner.nextLine());
+        double min = Double.parseDouble(scanner.nextLine().trim());
 
         System.out.println("Enter the maximum price: ");
-        double max = Double.parseDouble(scanner.nextLine());
+        double max = Double.parseDouble(scanner.nextLine().trim());
 
         defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByPrice(min, max);
@@ -77,10 +77,10 @@ public class UserInterface {
 
     public void processGetByMakeModelRequest() {
         System.out.println("Enter the make: ");
-        String make = scanner.nextLine();
+        String make = scanner.nextLine().trim();
 
         System.out.println("Enter the model: ");
-        String model = scanner.nextLine();
+        String model = scanner.nextLine().trim();
 
         defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByMakeModel(make, model);
@@ -89,10 +89,10 @@ public class UserInterface {
 
     public void processGetByYearRequest() {
         System.out.println("Enter the minimum year: ");
-        int min = Integer.parseInt(scanner.nextLine());
+        int min = Integer.parseInt(scanner.nextLine().trim());
 
         System.out.println("Enter the maximum year: ");
-        int max = Integer.parseInt(scanner.nextLine());
+        int max = Integer.parseInt(scanner.nextLine().trim());
 
         defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByYear(min, max);
@@ -101,7 +101,7 @@ public class UserInterface {
 
     public void processGetByColorRequest() {
         System.out.println("Enter the color: ");
-        String color = scanner.nextLine();
+        String color = scanner.nextLine().trim();
 
         defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByColor(color);
@@ -110,10 +110,10 @@ public class UserInterface {
 
     public void processGetByMileageRequest() {
         System.out.println("Enter the minimum mileage: ");
-        int min = Integer.parseInt(scanner.nextLine());
+        int min = Integer.parseInt(scanner.nextLine().trim());
 
         System.out.println("Enter the maximum mileage");
-        int max = Integer.parseInt(scanner.nextLine());
+        int max = Integer.parseInt(scanner.nextLine().trim());
 
         defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByMileage(min, max);
@@ -122,7 +122,7 @@ public class UserInterface {
 
     public void processGetByVehicleTypeRequest() {
         System.out.println("Enter Vehicle Type: ");
-        String type = scanner.nextLine();
+        String type = scanner.nextLine().trim();
 
         defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByType(type);
