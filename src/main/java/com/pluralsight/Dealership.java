@@ -71,15 +71,35 @@ public class Dealership {
     }
 
     public List<Vehicle> getVehiclesByYear(int min, int max) {
-        return null;
+        List<Vehicle> matchedVehicles = new ArrayList<>();
+
+        for (Vehicle v: inventory){
+            if(v.getYear() >= min && v.getYear() <= max) {
+                matchedVehicles.add(v);
+            }
+        }
+        return matchedVehicles;
     }
 
     public List<Vehicle> getVehiclesByColor(String color) {
-        return null;
+        List<Vehicle> matchedVehicles = new ArrayList<>();
+
+        for (Vehicle v: inventory) {
+            if(color.equalsIgnoreCase(v.getColor())) {
+                matchedVehicles.add(v);
+            }
+        }
+        return matchedVehicles;
     }
 
     public List<Vehicle> getVehiclesByMileage(int min, int max) {
-        return null;
+        List<Vehicle> matchedVehicles = new ArrayList<>();
+
+        for (Vehicle v: inventory) {
+            if(v.getOdometer() >= min && v.getOdometer() <= max);
+            matchedVehicles.add(v);
+        }
+        return matchedVehicles;
     }
 
     public List<Vehicle> getVehiclesByType(String vehicleType) {
