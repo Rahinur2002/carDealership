@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53547db-c2c4-4d0b-991f-b1fa2659cb61" name="Changes" comment="Finished the getDealership method to store the dealership information and vehicle information.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DealershipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DealershipFileManager.java" afterDir="false" />
+    <list default="true" id="a53547db-c2c4-4d0b-991f-b1fa2659cb61" name="Changes" comment="Phase 3 Completed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +34,16 @@
     &quot;accountId&quot;: &quot;2e1aef95-2394-45a8-80bd-a9ee3a928058&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/DealershipFileManager.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="34Td7MfRNGheQ38S5g5QtozgwLl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,12 +51,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.DealershipFileManager.executor": "Run",
+    "Application.Program.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="DealershipFileManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pluralsight.DealershipFileManager" />
       <module name="carDealership" />
@@ -67,8 +71,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.Program" />
+      <module name="carDealership" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program" />
         <item itemvalue="Application.DealershipFileManager" />
       </list>
     </recent_temporary>
@@ -98,12 +116,30 @@
       <option name="project" value="LOCAL" />
       <updated>1761332292067</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Phase 2 Completed">
+      <option name="closed" value="true" />
+      <created>1761786409702</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761786409702</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Phase 3 Completed">
+      <option name="closed" value="true" />
+      <created>1761790298004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761790298004</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the Dealership and Vehicle data classes" />
     <MESSAGE value="Finished the getDealership method to store the dealership information and vehicle information." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the getDealership method to store the dealership information and vehicle information." />
+    <MESSAGE value="Phase 2 Completed" />
+    <MESSAGE value="Phase 3 Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase 3 Completed" />
   </component>
 </project>

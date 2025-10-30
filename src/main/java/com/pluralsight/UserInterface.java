@@ -110,18 +110,19 @@ public class UserInterface {
 
     public void displayMenu(){
         System.out.println("Welcome to the Dealership Interface");
-        System.out.println("==========================================" +
-                "1 - Find vehicles within a price range\n" +
-                "2 - Find vehicles by make / model\n" +
-                "3 - Find vehicles by year range\n" +
-                "4 - Find vehicles by color\n" +
-                "5 - Find vehicles by mileage range\n" +
-                "6 - Find vehicles by type\n" +
-                "7 - List ALL vehicles\n" +
-                "8 - Add a vehicle\n" +
-                "9 - Remove a vehicle\n" +
-                "99 - Quit\n" +
-                "==========================================");
+        System.out.println("""
+                ==========================================
+                1 - Find vehicles within a price range
+                2 - Find vehicles by make / model
+                3 - Find vehicles by year range
+                4 - Find vehicles by color
+                5 - Find vehicles by mileage range
+                6 - Find vehicles by type
+                7 - List ALL vehicles
+                8 - Add a vehicle
+                9 - Remove a vehicle
+                99 - Quit
+                ==========================================""");
     }
 }
 
