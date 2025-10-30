@@ -174,7 +174,17 @@ public class UserInterface {
     }
 
     public void processRemoveVehicleRequest() {
-        System.out.println("Processing remove-vehicle request...");
+        try {
+            System.out.println("Enter VIN (number) of the vehicle you want to remove");
+            int vin = Integer.parseInt(scanner.nextLine().trim());
+
+            dealership.removeVehicle(vin);
+
+            DealershipFileManager.saveDealership(dealership);
+            System.out.println("Successfully removed the vehicle with VIN: " + vin);
+        } catch (NumberFormatException e) {
+            throw new RuntimeException("failed to remove the vehicle", e);
+        }
     }
 
     private void displayVehicles(List<Vehicle> vehicles){
