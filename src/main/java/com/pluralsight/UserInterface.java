@@ -135,7 +135,41 @@ public class UserInterface {
     }
 
     public void processAddVehicleRequest() {
-        System.out.println("Processing add-vehicle request...");
+
+        try {
+            System.out.println("VIN (number): ");
+            int vin = Integer.parseInt(scanner.nextLine().trim());
+
+            System.out.println("Year (number): ");
+            int year = Integer.parseInt(scanner.nextLine().trim());
+
+            System.out.println("Make: ");
+            String make = scanner.nextLine().trim();
+
+            System.out.println("Model: ");
+            String model = scanner.nextLine().trim();
+
+            System.out.println("Type: ");
+            String type = scanner.nextLine().trim();
+
+            System.out.println("Color: ");
+            String color = scanner.nextLine().trim();
+
+            System.out.println("Odometer (number): ");
+            int odometer = Integer.parseInt(scanner.nextLine().trim());
+
+            System.out.println("Price: ");
+            double price = Double.parseDouble(scanner.nextLine().trim());
+
+            Vehicle v = new Vehicle(vin, year, make, model, type, color, odometer, price);
+
+            dealership.addVehicle(v);
+
+            DealershipFileManager.saveDealership(dealership);
+            System.out.println("Added vehicle!");
+        } catch (NumberFormatException e) {
+            throw new RuntimeException("Error adding vehicle",e);
+        }
 
     }
 
