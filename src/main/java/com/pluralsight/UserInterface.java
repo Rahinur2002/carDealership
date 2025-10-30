@@ -58,6 +58,7 @@ public class UserInterface {
         System.out.println("Have a good day!");
     }
 
+
     public void processAllVehiclesRequest(){
         displayVehicles(dealership.getAllVehicles());
     }
@@ -69,6 +70,7 @@ public class UserInterface {
         System.out.println("Enter the maximum price: ");
         double max = Double.parseDouble(scanner.nextLine());
 
+        defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByPrice(min, max);
         displayVehicles(matchedVehicles);
     }
@@ -80,6 +82,7 @@ public class UserInterface {
         System.out.println("Enter the model: ");
         String model = scanner.nextLine();
 
+        defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByMakeModel(make, model);
         displayVehicles(matchedVehicles);
     }
@@ -91,6 +94,7 @@ public class UserInterface {
         System.out.println("Enter the maximum year: ");
         int max = Integer.parseInt(scanner.nextLine());
 
+        defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByYear(min, max);
         displayVehicles(matchedVehicles);
     }
@@ -99,6 +103,7 @@ public class UserInterface {
         System.out.println("Enter the color: ");
         String color = scanner.nextLine();
 
+        defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByColor(color);
         displayVehicles(matchedVehicles);
     }
@@ -110,20 +115,28 @@ public class UserInterface {
         System.out.println("Enter the maximum mileage");
         int max = Integer.parseInt(scanner.nextLine());
 
+        defaultHeader();
         List<Vehicle> matchedVehicles = dealership.getVehiclesByMileage(min, max);
         displayVehicles(matchedVehicles);
     }
 
     public void processGetByVehicleTypeRequest() {
-        System.out.println("Processing get-by-vehicle-type request...");
+        System.out.println("Enter Vehicle Type: ");
+        String type = scanner.nextLine();
+
+        defaultHeader();
+        List<Vehicle> matchedVehicles = dealership.getVehiclesByType(type);
+        displayVehicles(matchedVehicles);
     }
 
     public void processGetAllVehiclesRequest() {
-        System.out.println("Processing get-all-vehicles request...");
+        defaultHeader();
+        displayVehicles(dealership.getAllVehicles());
     }
 
     public void processAddVehicleRequest() {
         System.out.println("Processing add-vehicle request...");
+
     }
 
     public void processRemoveVehicleRequest() {
@@ -135,15 +148,18 @@ public class UserInterface {
             System.out.println("There are no vehicles at the moment!");
             return;
         }
+
         for(Vehicle v: vehicles){
-            System.out.println(v);
+            System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s $%-10s%n",
+            v.getVin(), v.getYear(), v.getMake(), v.getModel(), v.getVehicleType(),
+            v.getColor(), v.getOdometer(), v.getPrice());
         }
     }
 
     public void displayMenu(){
         System.out.println("Welcome to the Dealership Interface");
         System.out.println("""
-                ==========================================
+                ===================================================
                 1 - Find vehicles within a price range
                 2 - Find vehicles by make / model
                 3 - Find vehicles by year range
@@ -154,7 +170,12 @@ public class UserInterface {
                 8 - Add a vehicle
                 9 - Remove a vehicle
                 99 - Quit
-                ==========================================""");
+                ===================================================""");
+    }
+    private static void defaultHeader(){
+        System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s%n", "Vin", "Year", "Make",
+                "Model", "Type", "Color", "Odometer", "Price");
+        System.out.println("======================================================================================");
     }
 }
 
