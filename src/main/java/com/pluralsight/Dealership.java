@@ -49,11 +49,25 @@ public class Dealership {
     }
 
     public List<Vehicle> getVehiclesByPrice(double min, double max) {
-        return null;
+        List<Vehicle> matchedVehicles = new ArrayList<>();
+
+        for (Vehicle v: inventory){
+            if(v.getPrice() >= min && v.getPrice() <= max) {
+                matchedVehicles.add(v);
+            }
+        }
+        return matchedVehicles;
     }
 
     public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
-        return null;
+        List<Vehicle> matchedVehicles = new ArrayList<>();
+
+        for (Vehicle v: inventory) {
+            if(v.getMake().equalsIgnoreCase(make) && v.getModel().equalsIgnoreCase(model)){
+                matchedVehicles.add(v);
+            }
+        }
+        return matchedVehicles;
     }
 
     public List<Vehicle> getVehiclesByYear(int min, int max) {

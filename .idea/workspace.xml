@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53547db-c2c4-4d0b-991f-b1fa2659cb61" name="Changes" comment="Phase 3 Completed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Program.java" afterDir="false" />
+    <list default="true" id="a53547db-c2c4-4d0b-991f-b1fa2659cb61" name="Changes" comment="Phase 4 Completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761790298004</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Phase 4 Completed">
+      <option name="closed" value="true" />
+      <created>1761790546101</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761790546101</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,6 +151,7 @@
     <MESSAGE value="Finished the getDealership method to store the dealership information and vehicle information." />
     <MESSAGE value="Phase 2 Completed" />
     <MESSAGE value="Phase 3 Completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phase 3 Completed" />
+    <MESSAGE value="Phase 4 Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase 4 Completed" />
   </component>
 </project>

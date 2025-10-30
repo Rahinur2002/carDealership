@@ -63,11 +63,25 @@ public class UserInterface {
     }
 
     public void processGetByPriceRequest() {
-        System.out.println("Processing get-by-price request...");
+        System.out.println("Enter the minimum price: ");
+        int min = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Enter the maximum price: ");
+        int max = Integer.parseInt(scanner.nextLine());
+
+        List<Vehicle> matchedVehicles = dealership.getVehiclesByPrice(min, max);
+        displayVehicles(matchedVehicles);
     }
 
     public void processGetByMakeModelRequest() {
-        System.out.println("Processing get-by-make-model request...");
+        System.out.println("Enter the make: ");
+        String make = scanner.nextLine();
+
+        System.out.println("Enter the model: ");
+        String model = scanner.nextLine();
+
+        List<Vehicle> matchedVehicles = dealership.getVehiclesByMakeModel(make, model);
+        displayVehicles(matchedVehicles);
     }
 
     public void processGetByYearRequest() {
